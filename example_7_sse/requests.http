@@ -1,0 +1,9 @@
+### Отправка сообщения конкретному клиенту
+# Клиент должен быть подключён к SSE: python client_sse.py Алиса
+POST http://localhost:8000/send?sender=Борис&receiver=Алиса&content=Привет, Алиса!
+
+### Рассылка всем подключённым клиентам
+POST http://localhost:8000/broadcast?sender=Система&content=Важное объявление для всех!
+
+### Получение списка подключённых клиентов
+GET http://localhost:8000/clients

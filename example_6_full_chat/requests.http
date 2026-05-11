@@ -1,0 +1,45 @@
+### Регистрация пользователя Алиса
+POST http://localhost:8000/register
+Content-Type: application/json
+
+{
+  "username": "Алиса",
+  "email": "alice@example.com",
+  "password": "password123"
+}
+
+### Регистрация пользователя Борис
+POST http://localhost:8000/register
+Content-Type: application/json
+
+{
+  "username": "Борис",
+  "email": "boris@example.com",
+  "password": "password456"
+}
+
+### Авторизация Алисы
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+  "username": "Алиса",
+  "password": "password123"
+}
+
+### Авторизация Бориса
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+  "username": "Борис",
+  "password": "password456"
+}
+
+### Получение информации о текущем пользователе
+# Замените <token> на полученный access_token
+GET http://localhost:8000/me
+Authorization: Bearer <token>
+
+### Выход из системы
+POST http://localhost:8000/logout

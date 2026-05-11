@@ -1,0 +1,39 @@
+# виртуальное окружение
+.venv/
+venv/
+env/
+
+# кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# временные файлы примеров
+test_file.txt
+downloaded_*.txt
+large_file.bin
+downloaded_*.bin
+uploads/
+
+# база данных
+*.db
+*.sqlite3
+
+# переменные окружения
+.env
+.env.local
+
+# логи
+*.log
+
+# дистрибутивы
+dist/
+build/
+*.egg-info/
