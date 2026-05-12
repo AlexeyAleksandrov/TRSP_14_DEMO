@@ -1,4 +1,4 @@
-# Демонстрация: WebSocket в FastAPI
+# Практическое занятие №14: WebSocket в FastAPI
 
 ---
 
